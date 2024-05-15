@@ -25,10 +25,25 @@
 
 // ------------------
 
-var btn = document.getElementById("btn");
-var off = document.getElementById("off");
-var div_container = document.getElementById("div_container");
+// var btn = document.getElementById("btn");
+// var off = document.getElementById("off");
+var lightBtn = document.getElementById("light");
+var img = document.getElementById("img");
 
+lightBtn.addEventListener('click',()=>{
+    if(img.alt =='off'){
+        img.src= 'image/on.png';
+        img.alt= 'on'
+        lightBtn.textContent = 'Off'
+        heading.textContent = 'Light Off'
+    }else{
+        img.src= 'image/off.png';
+        img.alt= 'off'
+        lightBtn.textContent = 'On'
+        heading.textContent = 'Light On'
+
+    }
+})
 
 
 
@@ -37,14 +52,14 @@ var div_container = document.getElementById("div_container");
 //     div_container.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1gmPFE4xKy4j4dHLKyG78BbbTBvWz8mQaRRb3w4aO0fmBmlhzgTVqCZSSX54GZIuaaCc&usqp=CAU";
 // });
 
-btn.addEventListener("click", function(){
-    div_container.src = "https://e7.pngegg.com/pngimages/922/441/png-clipart-creative-bulb-lightbulb-energy-saving-lamps-thumbnail.png";
-});
+// btn.addEventListener("click", function(){
+//     div_container.src = 'image/on.png';
+// });
 
 
-off.addEventListener("click", function(){
-    div_container.src = "https://www.freeiconspng.com/thumbs/bulb-off-icon/bulb-off-icon-3.png";
-})
+// off.addEventListener("click", function(){
+//     div_container.src = 'image/off.png';
+// })
 
 // btn.addEventListener("click", function(){
 //     alert("Hello Click Event");
