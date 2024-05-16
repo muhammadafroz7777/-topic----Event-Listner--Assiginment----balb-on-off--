@@ -35,12 +35,12 @@ lightBtn.addEventListener('click',()=>{
         img.src= 'image/on.png';
         img.alt= 'on'
         lightBtn.textContent = 'Off'
-        heading.textContent = 'Light Off'
+        heading.textContent = 'Light On'
     }else{
         img.src= 'image/off.png';
         img.alt= 'off'
         lightBtn.textContent = 'On'
-        heading.textContent = 'Light On'
+        heading.textContent = 'Light off'
 
     }
 })
